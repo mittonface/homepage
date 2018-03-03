@@ -1,12 +1,12 @@
 baseURL = "https://mittonface.com/"
 languageCode = "en-us"
-title = "Minimal"
+title = "Brent Mitton"
 theme = "minimal"
 googleAnalytics = ""
 
 [params]
     author = "Brent Mitton"
-    description = "Personal blog theme powered by Hugo"
+    description = "Programmer | Real Person"
     githubUsername = "#"
     accent = "green"
     showBorder = true
