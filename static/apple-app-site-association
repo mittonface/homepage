@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "X2T7LWSS76.com.ooka.ookaisland",
+        "paths": [ "/launcher*" ]
+      }
+    ]
+  }
+}
