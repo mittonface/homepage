@@ -1,0 +1,104 @@
+<h2>Skills</h2>
+
+<p>
+   Professionally and academically I've spent a h*ck of a lot of time in Python and related libraries such a Django, numpy, pandas.
+    I've built a couple of apps in ReactNative and made a few simple apps with ReactJS and AngularJS. I'm a big fan of AWS and have created systems using
+    EC2, S3, EMR, ElasticSearch, RDS, and a handful of other services. Recent experience can be summed up nicely in this barchart:
+</p>
+
+<div id="container" style="width:100%; height:300px; text-align: center"></div>
+
+<p>
+    On top of this I also have familiarity with various machine-learning and statistical methods:
+    <ul>
+        <li>Linear/Logistic regression.</li>
+        <li>Supervised learning techniques: k-means clustering, NNs (CNNs), SVMs </li>
+        <li>Reinforcement learning techniques</li>
+    </ul>
+</p>
+
+<p>
+    <a href="/imgs/bill.png">And more!</a> (I'd love to talk about various technologies and projects that I've worked on!)
+</p>
+
+<script type="text/javascript">
+  $(function () {
+    var myChart = Highcharts.chart('container', {
+      credits: {enabled: false},
+      title: {text:''},
+      chart: {
+        type: 'column'
+      },
+      xAxis: {
+        categories: ['Python', 'Django', 'Javascript', 'React', 'Angular', 'AWS', 'Java', 'CSharp'],
+        labels: {
+          useHTML: true,
+          formatter: function () {
+            if (this.value == 'Python')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/python_logo.png'></div>";
+            else if (this.value == 'Django')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/django_logo.png'></div>";
+            else if (this.value == 'Javascript')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/js_logo.png'></div>";
+            else if (this.value == 'React')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/react_logo.png'></div>";
+            else if (this.value == 'Angular')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/angular_logo.png'></div>";
+            else if (this.value == 'AWS')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/aws_logo.png'></div>";
+            else if (this.value == 'Java')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/java_logo.png'></div>";
+            else if (this.value == 'CSharp')
+              return "<div style='height: 50px; width: 50px'><img src='/imgs/c_sharp_logo.png'></div>";
+          }
+        }
+      },
+      yAxis: {
+        title: {
+          enabled: false
+        },
+        min: 0,
+        max: 10,
+        tickInterval: 5,
+        gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        labels: {
+          useHTML: true,
+          formatter: function() {
+            if (this.value == 10)
+              return "<strong>Expert</strong>"
+            else if (this.value == 5)
+              return "<strong>Familiar</strong>"
+            else if (this.value == 0)
+              return  "<strong>Acquainted</strong>"
+          }
+        }
+      },
+      series: [{
+        name: '',
+        data: [10, 10, 7, 4, 4, 5, 6, 3]
+      }],
+      colors: [
+        '#1c74ab',
+        '#003f2d',
+        '#f0db4f',
+        '#00d5ff',
+        '#dd0330',
+        '#ff9900',
+        '#e76f00',
+        '#9b4f97'
+      ],
+      plotOptions: {
+        column: { colorByPoint: true}
+      },
+      legend: {enabled: false},
+      tooltip: {
+        formatter: function() {
+          return "" + this.x
+        }
+
+      }
+
+    });
+  });
+</script>

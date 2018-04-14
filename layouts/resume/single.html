@@ -3,6 +3,9 @@
 <main style="text-align: left; ">
 
     {{.Content}}
+    {{ partial "experience.html" }}
+    {{ partial "education.html" }}
+    {{ partial "skills.html" . }}
 </main>
 
 {{ partial "footer.html" . }}
